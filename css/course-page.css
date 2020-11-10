@@ -1,0 +1,194 @@
+header{
+    display: flex;
+    border-bottom: solid 2px;
+    border-color: rgb(155, 155, 155);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+header a{
+    text-decoration: none;
+}
+
+body{
+    margin-left: 15vw;
+    margin-right: 15vw;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    font-family: Droid Sans;
+    padding: 0;
+}
+footer{
+    border-top: solid 2px;
+    border-color: rgb(155, 155, 155);
+
+    display: flex;
+
+    font-size: 15px;
+
+    justify-content: space-around;
+}
+
+.logo{
+    height: 70px;
+}
+
+.colored-text{
+    color: #955bc1;
+}
+
+.container{
+    display: flex;
+    position: relative;
+}
+
+@media(min-width: 786px){
+    .rightside-menu{
+        flex-basis: 20%;
+        flex-direction: column;
+    }
+    .rightside-menu button{
+        width: 100%;
+        background-color: black;
+        border: none;
+        border-bottom: solid white 2px;
+        color: white;
+        height: 40px;
+    }
+    .rightside-menu button:hover{
+        color:  #955bc1;
+        border-color:  #955bc1;
+    }
+    .rightside-menu button:active, button:focus {
+      outline: none;
+    }
+    #open-menu{
+        display: none;
+    }
+}
+
+@media(max-width: 785px){
+    .rightside-menu{
+        display: none;
+    }
+    #open-menu{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 15px;
+        width: 40px;
+        font-size: 20px;
+        background-color: #fff;
+        color: #955bc1;
+        border: none;
+    }
+    
+    #open-menu:hover{
+        background-color: #955bc1;
+        color: #fff;
+    }
+    #open-menu:active, #open-menu:focus{
+        outline: none;
+    }
+    .opened-menu{
+        display: flex;
+        margin-top: 50px;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        width: 200px;
+    }
+
+    .opened-menu button{
+        width: 100%;
+        background-color: black;
+        border: none;
+        border-bottom: solid white 2px;
+        color: white;
+        height: 40px;
+    }
+    .opened-menu button:hover{
+        color:  #955bc1;
+        border-color:  #955bc1;
+    }
+    .opened-menu button:active, button:focus {
+      outline: none;
+    }
+}
+
+
+
+.chapters{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-basis: 80%;
+}
+.chapter{
+    flex-basis: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 0;
+
+    background-color: #aeaeae;
+
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+.chapter h3{
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.514);
+}
+.chapter:hover{
+    color: #955bc1;
+    box-shadow: 0px 0px 20px 5px rgba(149,91,193,1);
+}
+.chapter:hover h3{
+    background-color: rgba(0, 0, 0, 0.719);
+}
+
+
+#chapter1{
+    background-image: url(../img/styl/skulpting.png);
+}
+#chapter2{
+    background-image: url(../img/styl/retop.png);
+}
+#chapter3{
+    background-image: url(../img/styl/uv.png);
+}
+#chapter4{
+    background-image: url(../img/styl/texture.png);
+}
+#chapter5{
+    background-image: url(../img/styl/rig.png);
+}
+#chapter6{
+    background-image: url(../img/styl/animation.png);
+}
+#chapter7{
+    background-image: url(../img/styl/presentation.png);
+}
+#chapter8{
+    background-image: url(../img/styl/diplom.png);
+}
+#chapter9{
+    background-image: url(../img/styl/bonuses.png);
+}
+#chapter10{
+    background-image: url(../img/styl/useful.png);
+}
+
+
+
+
+
+@font-face {
+font-family: 'Droid Sans';
+src: local('Droid Sans'),
+url(../fonts/DroidSans.ttf);
+}

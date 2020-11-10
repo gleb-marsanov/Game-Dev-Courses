@@ -1,0 +1,20 @@
+p{
+    margin-top: 30px;
+}
+
+.content .images-block{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content .images-block img{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.chapters{
+    justify-content: flex-start;
+}
+.chapters .chapter{
+    margin-left: 0;
+    margin-right: 20px;
+}

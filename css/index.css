@@ -1,0 +1,70 @@
+header{
+    display: flex;
+    border-bottom: solid 2px;
+    border-color: rgb(155, 155, 155);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+body{
+    margin-left: 15vw;
+    margin-right: 15vw;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    font-family: Droid Sans;
+    padding: 0;
+}
+footer{
+    border-top: solid 2px;
+    border-color: rgb(155, 155, 155);
+
+    display: flex;
+
+    font-size: 15px;
+
+    justify-content: space-around;
+}
+.logo{
+    height: 70px;
+}
+
+.colored-text{
+    color: #955bc1;
+}
+.course-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 350px;
+
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    background-image: url(../img/styl-banner.png);
+    background-repeat: no-repeat;
+    background-position: 0 -10;
+    background-size: cover;
+}
+.course-banner h1{
+    font-size: 40px;
+}
+.course-banner-link{
+    text-decoration: none;
+    color: #fff;
+}
+.course-banner-link:hover{
+    color:  #955bc1;
+}
+
+
+
+
+
+
+@font-face {
+font-family: 'Droid Sans';
+src: local('Droid Sans'),
+url(../fonts/DroidSans.ttf);
+}
